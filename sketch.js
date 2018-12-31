@@ -16,7 +16,7 @@ function setup() {
 }
 
 function draw() {
-    background(0);
+    background(30);
 
     for(var b of bubbles) {
         b.draw();
