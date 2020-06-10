@@ -3,7 +3,7 @@ const diameter = 150;
 const numBubble = 20;
 
 function setup() {
-    createCanvas(displayWidth,displayHeight-100);
+    createCanvas(displayWidth,displayHeight-200);
     background(0);
     
     for(var i=0; i<numBubble; ++i) {

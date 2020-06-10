@@ -3,7 +3,7 @@ class Bubble {
         this.pos = pos;
         this.dia = dia;
         this.rad = dia/2;
-        this.speed = 5.5;
+        this.speed = 3.5;
         this.vel = createVector(random(-this.speed,this.speed), random(-this.speed,this.speed));
         this.col = color(random(30,255),random(30,255),random(30,255));
 
