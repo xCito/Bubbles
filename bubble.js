@@ -3,9 +3,9 @@ class Bubble {
         this.pos = pos;
         this.dia = dia;
         this.rad = dia/2;
-        this.speed = 1.5;
+        this.speed = 5.5;
         this.vel = createVector(random(-this.speed,this.speed), random(-this.speed,this.speed));
-        this.col = color(random(10,255),random(10,255),random(10,255));
+        this.col = color(random(30,255),random(30,255),random(30,255));
 
         //this.trail = new Trail(200);
     }
@@ -16,9 +16,9 @@ class Bubble {
 
         if(dst >= bubble.rad + this.rad) 
             return;
-        else 
-            console.log("collision");
-    
+        else {
+            // console.log("collision");
+        }
 
         let overLapHalf = 0.5 * (dst - this.rad - bubble.rad);
         this.pos = p5.Vector.sub(this.pos, p5.Vector.div(p5.Vector.mult(diff,overLapHalf), dst));       // overlap correction this
