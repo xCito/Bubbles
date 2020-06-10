@@ -1,6 +1,6 @@
 let bubbles = [];
-const diameter = 250;
-const numBubble = 30;
+const diameter = 150;
+const numBubble = 20;
 
 function setup() {
     createCanvas(displayWidth,displayHeight-100);
@@ -24,13 +24,13 @@ function draw() {
         b.update();
     }
 
-    // for(var i=0; i<bubbles.length; ++i) {
-    //     for(var j=0; j<bubbles.length; ++j) {
-    //         if(i!=j) {
-    //             bubbles[i].collision(bubbles[j]);
-    //         }
-    //     }
-    // }
+    for(var i=0; i<bubbles.length; ++i) {
+        for(var j=0; j<bubbles.length; ++j) {
+            if(i!=j) {
+                bubbles[i].collision(bubbles[j]);
+            }
+        }
+    }
 
     // console.log(frameRate())
  
